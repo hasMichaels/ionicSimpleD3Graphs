@@ -1,0 +1,19 @@
+<ion-view title="Graph">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+
+    <h1>Graph</h1>
+
+    <div style="width:500px; height:150px; background-color: #AAA; margin:10px;">
+
+      <div id="debug" style="background-color:#FFCC00">Constrained Graph</div>
+      <div smallgraph data='{{getSampleData()}}' id="testGraph"></div>
+
+    </div>
+
+    <div smallgraph id="chart" data="{ columns : [['data1', 130, 100, 200, 40, 150, 50]],axes : { data2 : 'clicks' }, types : { data1 : 'area-spline', data2 : 'line' }}"></div>
+
+  </ion-content>
+</ion-view>
